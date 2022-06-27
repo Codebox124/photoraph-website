@@ -1,0 +1,182 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(246, 248, 247);
+}
+header{
+    background-color: white;
+
+}
+header a{
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+
+}
+header #logo{
+    font-size:2em;
+}
+header nav li{
+    display: inline-block;
+
+}
+header nav a{
+    transition: background-color 0.4s;
+}
+header nav a:hover{
+    background-color: rgba(0,0,0,.1);
+    
+    
+
+}
+#showcase{
+    height: 250px;
+    background-image: url("../asset/capture\ 1.PNG");
+    background-size: cover;
+    position: relative;
+
+}
+#showcase .text{
+    background-color: rgba(0,0,0,.3);
+    position: absolute;
+    width: 100%;
+    bottom: 100px;
+}
+#showcase .text h2{
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+/**showcase**/
+
+.call-to-action a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #55C18F;
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0px;
+    border-radius: 50px 0px;
+    transition: background-color 0.4s,color 0.4s;
+}
+.call-to-action a:hover{
+    background-color: #fff;
+    color:#55C18F ;
+}
+/**few-word**/
+#services{
+    background-color: #55C18F;
+    color: #fff;
+    text-align: center;
+}
+#services h2{
+    padding: 20px;
+    font-size: 1.5em;
+}
+.services{
+    margin: 20px;
+    background-size: cover;
+    padding: 10px;
+    margin: 15px;
+
+}
+.services h3, .services p{
+    padding: 10px;
+    
+}
+.services h3{
+    font-size: 1.4em;
+    border-bottom: 1px solid #fff;
+    font-weight: bold;
+}
+.services.one{
+    background-image:linear-gradient(rgba(0,0,0,.5),(rgba(0,0,0,.7)),url("../asset/capture\ 1.PNG"));
+}
+.services.two{
+    background-image:linear-gradient(rgba(0,0,0,.5),(rgba(0,0,0,.7)) url("../asset/Capture3.PNG"));
+}
+.services.three{
+    background-image:linear-gradient(rgba(0,0,0,.5),(rgba(0,0,0,.7)) url("../asset/Capture.PNG"));
+}
+footer{
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+}
+footer .services ul{
+    list-style-type: none;
+
+}
+footer .services li{
+    padding: 10px 0px;
+}
+footer .services h5{
+    padding: 15px 0px;
+    font-size: 1.2em;
+}
+footer .services{
+    margin-bottom: 20px;
+}
+footer a{
+    color: #fff;
+
+}
+footer .contact-info{
+    padding: 10px 0px;
+}
+footer .contact-form{
+    padding: 20px 0px;
+}
+footer .contact-form input{
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0px;
+}
+footer .contact-form button{
+    background-color:#55C18F;
+    color:#fff;
+    padding: 15px;
+    display: inline-block;
+  
+    text-decoration: none;
+    transition: box-shadow 0.4s;
+    margin:10px 0px;
+    border: none;
+}
+.services-container, .works-container{
+    max-width: 700px;
+    margin: 10px auto;
+}
+.services{
+    margin: 20px 10px;
+}
+.services-title{
+    padding: 15px;
+    text-align: center;
+    border-bottom:2px solid ;
+    font-size: 1.4em;
+
+}
+
+
+/**footer**/
+@media screen and (min-width:600px){
+    header #logo{
+        display: inline-block;
+        width: 30%;
+        padding: 10px;
+    }    
+    header nav{
+        display: inline-block;
+        width: 60%;
+    } 
+}
+    
+

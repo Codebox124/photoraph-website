@@ -31,13 +31,11 @@ header nav a{
 }
 header nav a:hover{
     background-color: rgba(0,0,0,.1);
-    
-    
-
 }
+
 #showcase{
     height: 250px;
-    background-image: url("https://images.unsplash.com/photo-1521856729154-7118f7181af9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHBob3RvZ3JhcGhlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+    background-image: url("../asset/Capture3.PNG");
     background-size: cover;
     position: relative;
 
@@ -82,11 +80,87 @@ header nav a:hover{
 .call-to-action a:hover{
     box-shadow: 0px 0px 15px rgba(0,0,0,.2);
 }
+/**few-word**/
+#history{
+    background-color: #fff;
+    text-align: center;
+}
+#history h2{
+    padding: 20px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    margin-bottom: 30px;
+}
+.event{
+    margin: 10px;
+}
+.event p{
+    padding: 10px;
+}
+.event-date{
+    color: #55C18F;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.event .event-title{
+    color: #55C18F;
+    font-size: 1.3em;
+}/**history**/
+
+#our-team{
+   
+    text-align: center;
+    padding-bottom: 50px;
+}
+#our-team h2{
+    padding: 20px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    margin-bottom: 30px;
+}
+.member{
+    margin: 10px;
+    padding: 5px;
+    padding-bottom: 15px;
+    background-color: #fff;
+   
+   
+}
+.members img{
+    height: 150px;
+    width: 150px;
+    margin:10px;
+    border-radius: 50%;
+}
+/**/
+#faq{
+    background-color: #fff;
+}
+#faq h2{
+    padding: 20px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    margin-bottom: 30px;
+    text-align: center;
+
+}
+.faq{
+    margin: 10px;
 
 
+}
+.faq p{
+    padding: 10px;
 
-
-
+}
+.faq .q{
+    font-style: italic;
+    color: #55C18F;
+    font-weight: bold;
+}
+.faq span{
+    font-size: 1.2em;
+    padding-right: 5px;
+    font-weight: bold;
+    font-style: italic;
+}
 
 /***header*/
 footer{
@@ -128,18 +202,61 @@ footer .contact-form button{
     color:#fff;
     padding: 15px;
     display: inline-block;
-  
     text-decoration: none;
     transition: box-shadow 0.4s;
     margin:10px 0px;
     border: none;
 }
 /**footer**/
-@media screen and (min-width:1000px){
+@media screen and (min-width:600px){
     header nav{
         display: inline-block;
         width: 60%;
     }
 }
     
+/* Media queries */
 
+@media screen and (min-width:750px){
+    #history .event{
+        display: inline-block;
+        width: 45%;
+    }
+    header #logo{
+        display: inline-block;
+        width: 30%;
+        padding: 10px;
+    }
+    header nav{
+        display: inline-block;
+        width: 60%;
+    }
+    #our-team .members{
+        float: left;
+        width: 45%;
+    }
+    #our-team .members-container:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    #faq .faq{
+        float: left;
+        width: 47%;
+    }
+    #faq .faq-container:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    footer .services, footer .contact-info{
+        display: inline-block;
+        width: 46%;
+    }
+    footer .contact-form input{
+        width: 70%;
+    }
+    footer .contact-form button{
+        margin-left: 20px;
+    }
+}

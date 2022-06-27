@@ -1,533 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="/prject/gaden/css/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapi.com/css?family=Open+Sans|Roboto" rel="stylesheet">
     <title>Home</title>
-    <style>
-        *{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    
-}
-body{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: rgb(246, 248, 247);
-}
-header{
-    background-color: white;
-
-}
-header a{
-    display: inline-block;
-    padding: 15px;
-    text-decoration: none;
-    color: black;
-
-}
-header #logo{
-    font-size:2em;
-}
-header nav li{
-    display: inline-block;
-
-}
-header nav a{
-    transition: background-color 0.4s;
-}
-header nav a:hover{
-    background-color: rgba(0,0,0,.1);
-    
-    
-
-}
-/***header*/
-
-#intro{
-    min-height: 400px;
-    background-image: url("https://images.unsplash.com/photo-1521856729154-7118f7181af9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHBob3RvZ3JhcGhlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
-    background-size: cover;
-   
-}
-.intro-text{
-   text-align: center;
-   position: relative;
-   top: 100px;
-   
-
-
-   
-}
-.intro-text h2{
-    color: #fff;
-    padding: 15px;
-    text-align: center;
-    background-color: rgba(0,0,0,.3);
-
-}
-.intro-text h3{
-    color: #fff;
-    padding: 10px;
-    background-color: rgba(0,0,0,.3);
-}
-.intro-text .call-to-action{
-    padding: 20px;
-
-}
-.intro-text .call-to-action a{
-    background-color:#55C18F;
-    color:#fff;
-    padding: 15px;
-    display: inline-block;
-    margin: 20px 0px 50px;
-    text-decoration: none;
-    transition: box-shadow 0.4s;
-} 
-.intro-text .call-to-action a:hover{
-    box-shadow: 2px 2px 15px rgba(0,0,0,.2);
-}
-/**intro**/
-
-#welcome{
-    background-color: #55C18F;
-    color: #fff;
-}
-#welcome h2{
-    padding: 15px;
-    text-align: center;
-
-}
-#welcome p{
-    padding: 10px;
-}
-.services-container, .works-container{
-    max-width: 700px;
-    margin: 10px auto;
-}
-.services{
-    margin: 20px 10px;
-    text-align: center;
-}
-.services-title{
-    padding: 15px;
-    text-align: center;
-    border-bottom:2px solid ;
-    font-size: 1.4em;
-
-}
-.work{
-    height: 250px;
-    background-color: ;
-    margin: 20px 10px;
-    background-size: cover;
-    position: relative;
-}
-.work.one{
-    background-image: url("https://images.pexels.com/photos/5700184/pexels-photo-5700184.jpeg?auto=compress&cs=tinysrgb&w=600");
-}
-.work.two{
-    background-image: url("https://static.wixstatic.com/media/8bb438_22ad7948c19846b1accecec513384bb0~mv2.jpg/v1/fit/w_500,h_333,q_90/8bb438_22ad7948c19846b1accecec513384bb0~mv2.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1cm46YXBwOjZiZTRmNGFmMjAzOTQwOTVhZDY5Y2NjMzk4ODkyYzhkIiwib2JqIjpbW3sicGF0aCI6Ii9tZWRpYS84YmI0MzhfMjJhZDc5NDhjMTk4NDZiMWFjY2VjZWM1MTMzODRiYjB-bXYyLmpwZyJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sImlzcyI6InVybjphcHA6NmJlNGY0YWYyMDM5NDA5NWFkNjljY2MzOTg4OTJjOGQiLCJpYXQiOjEwMDAsImp0aSI6IjE2NTY2MzM2MDAiLCJleHAiOjE2NTY2MzM2MDAsIndtayI6eyJwYXRoIjoiL21lZGlhLzhiYjQzOF8zOWE3OGI0NmQ0ZmU0NzA2OWRhNjNkYTkzNDhiNGVlNX5tdjIucG5nIiwib3BhY2l0eSI6MSwicHJvcG9ydGlvbnMiOjAuMSwiZ3Jhdml0eSI6Im5vcnRoLXdlc3QifX0.oRLDEUOrjp7-43yDSVvaBhjwBOyromgLxr0PJiKHnXY");
-}
-.work.three{
-    background-image: url("https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=600");
-}
-.work.four{
-    background-image: url("https://images.pexels.com/photos/807598/pexels-photo-807598.jpeg?auto=compress&cs=tinysrgb&w=600");
-}
-.work-title{
-    padding: 20px;
-    text-align: center;
-    background-color: rgba(0,0,0,.5);
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-
-}
-/**welcome*/
-#blog{
-    text-align: center;
-
-}
-#blog h2{
-    padding: 15px;
-   
-}
-#blog call-to-action{
-    margin: 10px 0px 20px;
-
-}
-#blog call-to-action a , .article-button a{
-    background-color:#55C18F;
-    color:#fff;
-    padding: 15px;
-    display: inline-block;
-  
-    text-decoration: none;
-    transition: box-shadow 0.4s;
-}
-#blog call-to-action a:hover , .article-button a:hover{
-    box-shadow: 2px 2px 15px rgba(0,0,0,.2);
-}
-.articles-container{
-    max-width: 700px;
-    margin: auto;
-
-}
-.articles{
-    margin: 20px;
-    background-color: #fff;
-    text-align: center;
-    box-shadow: 0px 0px 15px rgba(0,0,0,.2);
-
-}
-.article-date{
-    padding: 15px;
-    color: white;
-    background-color: black;
-}
-.article-title{
-    padding: 15px;
-}
-.article-text{
-    padding: 0px 15px 10px;
-}
-.article-button{
-    width: 50%;
-    margin: auto;
-}
-.article-button a{
-    margin: 20px;
-}
-
-/**blog**/
-#testimonials{
-    background-color: #fff;
-    text-align: center;
-    padding-bottom:50px ;
-
-}
-#testimonials h2 {
-    padding: 15px;
-    font-size: 1.5em;
-}
-#testimonials h3{
-    padding: 10px 15px;
-    font-size:1.4em ;
-}
-.testimonial{
-    margin: 20px;
-   
-    padding: 10px;
-
-}
-.testimonial img{
-    height: 150px;
-    width: 170px;
-    margin: 20px auto;
-    border-radius: 50%;
-
-
-}
-.testimonial p{
-    padding: 10px 0px;
-}
-
-
-/**testimonials**/
-
-footer{
-    background-color: black;
-    color: #fff;
-    padding: 20px;
-}
-footer .services ul{
-    list-style-type: none;
-
-}
-footer .services li{
-    padding: 10px 0px;
-}
-footer .services h5{
-    padding: 15px 0px;
-    font-size: 1.2em;
-}
-footer .services{
-    margin-bottom: 20px;
-}
-footer a{
-    color: #fff;
-
-}
-footer .contact-info{
-    padding: 10px 0px;
-}
-footer .contact-form{
-    padding: 20px 0px;
-}
-footer .contact-form input{
-    width: 100%;
-    padding: 15px;
-    margin: 10px 0px;
-}
-footer .contact-form button{
-    background-color:#55C18F;
-    color:#fff;
-    padding: 15px;
-    display: inline-block;
-  
-    text-decoration: none;
-    transition: box-shadow 0.4s;
-    margin:10px 0px;
-    border: none;
-}
-/**footer**/
-
-@media screen and (min-width:1000px){
-    
-    header nav{
-        display: inline-block;
-        width: 60%;
-    }
-    #intro{
-        height: 600px;
-
-    }
-    .intro-text{
-     
-        top: 200px;
-        
-   
-    
-}
-        
-    
-    </style>
 </head>
 <body>
+    <!-- Header section -->
     <header>
         <div id="logo">
             <a href="#">FinTech Photograph</a>
         </div>
         <nav>
-         <ul>
-            <li> <a href="#">Home</a></li>
-            <li> <a href="about.html">About</a></li>
-            <li> <a href="#">Service</a></li>
-            <li> <a href="#">Contact Us</a></li>
-         </ul>
-     </nav>
-        
+            <ul>
+                <li class="active"><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
+    <!-- Banner section -->
     <section id="intro">
         <div class="intro-text">
-            <h2>Professional in photo taking &amp; 
-                Editing</h2>
-                <h3>The best solution for you</h3>
-       
-         <div class="call-to-action">
-            <a href="#">View Project</a></div>
+            <h2>Professional In taking and editing pictures</h2>
+            <h3>The best solution for YOU</h3>
+            <div class="call-to-action">
+                <a href="#">View Project</a>
+            </div>
         </div>
-
     </section>
-    <!--/ intro-->
+    <!-- Welcome section -->
     <section id="welcome">
-        <h2>Welcome to My Gallary</h2>
-        <p>I would love for my work to be seen as a celebration of human endeavour, whether concentrating on an individual’s personal sporting pursuits, or the artistry and craft involved in a highly skilled, labour-intensive industry.
-
-        I shoot in a fast, fluid fashion, creating situations that build believable scenes, whilst encouraging and allowing my subjects the freedom to move, laugh, enjoy and be themselves.
-        
-        Much of my photography incorporates people who don’t model professionally, so I allow plenty of opportunities to converse before and during the shoot, putting them at ease in front of the camera.
-        
-        My inclusive and collaborative approach to work produces fun, genuine moments as they unfold. It keeps shoots spontaneous, light and full of energy, and to the best of my ability, will give a very natural, emotive final image.</p>
-             <div class="services-container">
-                <div class="service">
-                    <h3 class="services-title">
-                        What is Photo editing?
-                    </h3>
-                    <p>In simple, photo editing is the change of an existing photo shoot. These changes can be modifying, altering any portion, or improving its visualization using different tools, software.
-                    </p>
-
+        <h2>Welcome to my Gallery</h2>
+        <p>I would love for my work to be seen as a celebration of human endeavour, whether concentrating on an individual’s personal sporting pursuits, or the artistry and craft involved in a highly skilled, labour-intensive industry. I shoot in a fast, fluid fashion, creating situations that build believable scenes, whilst encouraging and allowing my subjects the freedom to move, laugh, enjoy and be themselves. Much of my photography incorporates people who don’t model professionally, so I allow plenty of opportunities to converse before and during the shoot, putting them at ease in front of the camera. My inclusive and collaborative approach to work produces fun, genuine moments as they unfold. It keeps shoots spontaneous, light and full of energy, and to the best of my ability, will give a very natural, emotive final image.</p>
+        <div class="services-container">
+            <div class="service">
+                <h3 class="service-title">What is Photo editing?</h3>
+                <p>In simple, photo editing is the change of an existing photo shoot. These changes can be modifying, altering any portion, or improving its visualization using different tools, software.</p>
+            </div>
+            <div class="service">
+                <h3 class="service-title">Concept Design</h3>
+                <p>Basic concepts of photography 1 Shutter speed 2 Exposure triangle 3 Depth of field 4 Focal length 5 Sensor size 6 Camera settings 7 Camera modes 8 Metering modes 9 Focus modes & areas 10 White balance</p>
+            </div>
+            <div class="service">
+                <h3 class="service-title">Documentation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste obcaecati doloribus nisi suscipit explicabo sunt, harum tempora laboriosam, dolorem enim sed perferendis consequuntur vitae repellat nobis perspiciatis maxime officiis vel?</p>
+            </div>
+        </div>
+        <div class="work-container">
+            <div class="work one">
+                <div class="work-title">
+                    <h4>Portrait</h4>
                 </div>
-                <div class="service">
-                    <h3 class="services-title">
-                        Concept Photograph
-                    </h3>
-                    <p>Basic concepts of photography 1 Shutter speed 2 Exposure triangle 3 Depth of field 4 Focal length 5 Sensor size 6 Camera settings 7 Camera modes 8 Metering modes 9 Focus modes & areas 10 White balance
-                    </p>
-
+            </div>
+            <div class="work two">
+                <div class="work-title">
+                    <h4>Summer color</h4>
                 </div>
-                <div class="service">
-                    <h3 class="services-title">
-                        Documentation
-                    </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur
-                         adipisicing elit. Temporibus hic necessitatibus,
-                          ducimus sit error, officia eaque accusantium 
-                          ea rem facere ab consectetur culpa quis
-                         commodi consequuntur maxime
-                          sapiente excepturi nihil.
-                    </p>
-
+            </div>
+            <div class="work three">
+                <div class="work-title">
+                    <h4>Landscape design</h4>
                 </div>
-
-             </div>
-             <div class="works-container">
-                <div class="work one">
-                    <div class="work-title">
-                        <h4>Portrait</h4>
-                    </div>
+            </div>
+            <div class="work four">
+                <div class="work-title">
+                    <h4>Plant</h4>
                 </div>
-                <div class="work two">
-                    <div class="work-title">
-                        <h4>Summer colors</h4>
-                    </div>
-                </div>
-                <div class="work three">
-                    <div class="work-title">
-                        <h4>Landscape design</h4>
-                    </div>
-                </div>
-                <div class="work four">
-                    <div class="work-title">
-                        <h4>Plants &amp; flowers</h4>
-                    </div>
-                </div>
-
-             </div>
+            </div>
+        </div>
     </section>
-    <!--welcome section-->
+    <!-- Blog section -->
     <section id="blog">
-        <h2>Latest from the blog</h2>
-         <div class="call-to-action">
-            <a href="#">Visit our Blog</a>
-         </div>
-         <div class="articles-containers">
+        <h2>Latest from our blog</h2>
+        <div class="call-to-action">
+            <a href="#">Visit our blog</a>
+        </div>
+        <div class="article-container">
             <div class="article">
                 <div class="article-date">
-                    <p>Jun 20, 2018 </p>
+                    <p>Jan 20, 2018</p>
                 </div>
                 <div class="article-title">
                     <h3>How I Modified my Digital Camera to see the World Differently - Part II</h3>
-
                 </div>
                 <div class="article-text">
                     <p>Individual cameras may have slight variations on these digital camera settings, such as snow scene mode, fireworks mode, or sunset mode where it's use becomes obvious by its name. Check with your camera manual to be sure. Bruce is the publisher of Better Digital Photo Tips.</p>
                 </div>
                 <div class="article-button">
-                    <a href="#">Read more</a>
+                    <a href="">Read more</a>
                 </div>
-
-
             </div>
             <div class="article">
                 <div class="article-date">
-                    <p>Jun 20, 2018 </p>
+                    <p>Jan 20, 2018</p>
                 </div>
                 <div class="article-title">
                     <h3>Meta Three is a 12.5K 360 camera</h3>
-
                 </div>
                 <div class="article-text">
-                    <p>Meta Three is a professional 360 camera with four Super 35mm sensors, independently adjustable apertures, and 12.5k video resolution.  Here’s a review and sample 360 video (downscaled to 8K) by CreatorUp’s Hugh Hou: ﻿ At $40,000, the Meta Three is not cheap.  By comparison, the Insta360 Titan is about $15,000 and has somewhat similar 11k</p>
+                    <p>Meta Three is a professional 360 camera with four Super 35mm sensors, independently adjustable apertures, and 12.5k video resolution. Here’s a review and sample 360 video (downscaled to 8K) by CreatorUp’s Hugh Hou: ﻿ At $40,000, the Meta Three is not cheap. By comparison, the Insta360 Titan is about $15,000 and has somewhat similar 11k</p>
                 </div>
+                
                 <div class="article-button">
-                    <a href="#">Read more</a>
+                    <a href="">Read more</a>
                 </div>
-
-
-             </div>
-               <div class="article">
+            </div>
+            <div class="article">
                 <div class="article-date">
-                    <p>Jun 20, 2018 </p>
+                    <p>Jan 20, 2018</p>
+                </div>
+                <div class="article-title">
+                    <h3>DJI RS 3 Pro and RS 3 — what’s the difference?</h3>
+                </div>
+                <div class="article-text">
+                    <p>DJI launched the RS 3 and RS 3 Pro gimbals. The RS 3 is a replacement for the RSC 2, while the RS 3 Pro replaces the RS 2 Pro. The biggest differences between them are capacity: the RS 3 can support up to 6.6 lbs (3 kg) while the RS 3 Pro can support</p>
+                </div>
+           
+            <div class="article-button">
+                    <a href="">Read more</a>
+                </div>
+            </div>
+            
+            <div class="article">
+                <div class="article-date">
+                    <p>Jan 20, 2018</p>
                 </div>
                 <div class="article-title">
                     <h3>Theta Z1 Dual Fisheye Raw Remote app: is it worth it?</h3>
-
                 </div>
                 <div class="article-text">
-                    <p>The Dual Fisheye Raw Remote app for the Theta Z1 is out.  At $19.99, it is not a low cost app.  Is it worth it? The Ricoh Theta Z1 is one of the most well regarded 360 cameras for virtual tours.  With two 1-inch sensors, it has the largest sensors among all consumer 360 cameras. </p>
+                    <p>The Dual Fisheye Raw Remote app for the Theta Z1 is out. At $19.99, it is not a low cost app. Is it worth it? The Ricoh Theta Z1 is one of the most well regarded 360 cameras for virtual tours. With two 1-inch sensors, it has the largest sensors among all consumer 360 cameras.!</p>
                 </div>
                 <div class="article-button">
-                    <a href="#">Read more</a>
+                    <a href="">Read more</a>
                 </div>
-                <div class="article">
-                    <div class="article-date">
-                        <p>Jun 20, 2018 </p>
-                    </div>
-                    <div class="article-title">
-                        <h3>DJI RS 3 Pro and RS 3 — what’s the difference?</h3>
-    
-                    </div>
-                    <div class="article-text">
-                        <p>DJI launched the RS 3 and RS 3 Pro gimbals. The RS 3 is a replacement for the RSC 2, while the RS 3 Pro replaces the RS 2 Pro. The biggest differences between them are capacity: the RS 3 can support up to 6.6 lbs (3 kg) while the RS 3 Pro can support </p>
-                    </div>
-                    <div class="article-button">
-                        <a href="#">Read more</a>
-                    </div>
-
-
             </div>
-
-         </div>
-
+           
+        </div>
     </section>
-    <!--/blog-->
+    <!-- Testimonial -->
     <section id="testimonials">
-        <h2>Testimonials</h2>
-        <h3>What our client think</h3>
-        <div class="testimonial-container">
+        <h2>Testimonial</h2>
+        <h3>What our clients think</h3>
+        <div class="testimonials-container">
             <div class="testimonial">
-                <img src="https://scontent-los2-1.xx.fbcdn.net/v/t39.30808-6/273525190_264218659145077_7364688570835140717_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=dic07tq88RQAX81jply&_nc_ht=scontent-los2-1.xx&oh=00_AT8M9Rn4YtL8uO5wwRLfj2FTTxzLr7vSN6Yvp-yjswGKgA&oe=62BBD5B4" alt="profile">
-                <p>I really like there photos continue the good work</p>
-                <h5>Elisha David</h5>
+                <img src="https://scontent-los2-1.xx.fbcdn.net/v/t39.30808-6/273525190_264218659145077_7364688570835140717_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=dic07tq88RQAX81jply&_nc_ht=scontent-los2-1.xx&oh=00_AT8M9Rn4YtL8uO5wwRLfj2FTTxzLr7vSN6Yvp-yjswGKgA&oe=62BBD5B4" alt="">
+                <p>I love the way you edit pictures</p>
+                <h5>John Doe</h5>
                 <h6>Software Developer</h6>
-
             </div>
+        </div>
+        <div class="testimonials-container">
             <div class="testimonial">
-                <img src="https://scontent-los2-1.xx.fbcdn.net/v/t39.30808-6/285210289_345170854383190_545874244865004984_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=pFjzb4GqcLYAX9ktY53&_nc_ht=scontent-los2-1.xx&oh=00_AT9SA1RaOo_xF4CXDQMDc22e-dMgNJMZ6WzTQRRhbU1nVw&oe=62BBC33F" alt="profile">
-                <p>I love your picture editing</p>
-                <h5>Melvin Jones Gallano Repol</h5>
-                <h6>Software Engineer</h6>
-
+                <img src="https://scontent-los2-1.xx.fbcdn.net/v/t39.30808-6/285210289_345170854383190_545874244865004984_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=pFjzb4GqcLYAX9ktY53&_nc_ht=scontent-los2-1.xx&oh=00_AT9SA1RaOo_xF4CXDQMDc22e-dMgNJMZ6WzTQRRhbU1nVw&oe=62BBC33F" alt="">
+                <p>I love this website</p>
+                <h5>John Doe</h5>
+                <h6>Graphices Designer</h6>
             </div>
         </div>
     </section>
-    <!--testimonia-->
+    <!-- Footer section -->
     <footer>
         <div class="services">
             <h5>Services</h5>
             <nav>
                 <ul>
-                    <li><a href="#">Photo taking  </a></li>
-                
-                     <li><a href="#">Photo editing</a></li>
-                     <li><a href="#">Lanscape design</a></li>
-                    <li><a href="#">Plants</a></li>
-        
-            
+                    <li><a href="">Fall & spring clean up</a></li>
+                    <li><a href="">Lawn care</a></li>
+                    <li><a href="">Landscape design & installation</a></li>
+                    <li><a href="">Plants,flowers,soil,and mulches</a></li>
                 </ul>
-
             </nav>
         </div>
         <div class="contact-info">
-            <p>1 Bakare street Akiode Estate,Lagos.</p>
-            <p>+234 91 5385 6660</p>
+            <p>1,akiode estate lagos</p>
+            <p>+2348034678903</p>
             <p>Email: rajcodes733@gmail.com</p>
         </div>
         <div class="contact-form">
             <form action="">
-                <input type="Email" placeholder="Enter Your Email">
+                <input type="email" placeholder="Enter you email">
                 <button type="submit">Subscribe</button>
             </form>
         </div>
         <div class="copyright">
-            <p>copyright 2022 Codebox </p>
+            <p>copyright codebox.</p>
         </div>
-        
-
     </footer>
 </body>
 </html>
